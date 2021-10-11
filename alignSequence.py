@@ -20,4 +20,4 @@ def continueDeleteA(n, m):
 def continueDeleteB(n, m):
   if m == 0:
     return align(n, m)
-  return max(continueScore + continueDeleteB(n-1, m), align(n, m))
+  return max(continueScore + continueDeleteB(n, m-1), align(n, m))
